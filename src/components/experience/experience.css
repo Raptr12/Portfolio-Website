@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .experience__container > div {
@@ -44,7 +46,7 @@
 /*===============MEDIA QUERIES (MEDIUM DEVICES)=============================*/
 @media screen and (max-width: 1024px){
     .experience__container {
-        grid-template-columns: 1fr;
+        grid-template-columns:  1fr;
     }
     .experience__container > div {
         width: 80%;
