@@ -226,9 +226,7 @@ const Experience = () => {
               </div>
             </div>
           {/*END OF DEV TOOLS*/}
-
       </div>
-
     </section>
   )
 }
