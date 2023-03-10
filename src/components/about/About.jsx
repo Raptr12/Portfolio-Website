@@ -41,7 +41,14 @@ const About = () => {
             </article>
           </div>
           <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusamus officia dicta incidunt nesciunt unde debitis voluptatem exercitationem, asperiores quam beatae sunt. Ad modi officiis provident voluptatem molestias incidunt reprehenderit.
+            As a software engineer, I own a combination of technical and analytical skills, as well as a strong sense of creativity and innovation.
+            My expertise in a range of programming languages, including Java, Python, and JavaScript, demonstrates my adaptability and flexibility as a developer.
+            <br />
+            <br />
+            I am known for my attention to detail, logical thinking, and strategic mindset. These qualities serve me well in my role as a software engineer, My profession is based on dissecting intricate challenges and formulating imaginative and effective resolutions.
+            <br />
+            <br />
+            My combination of technical expertise and strategic thinking, along with my commitment to personal growth and learning, make me a valuable asset to any software development team or project.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
