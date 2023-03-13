@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contact.css'
 import {MdEmail} from 'react-icons/md'
 import {RiWhatsappFill} from 'react-icons/ri'
@@ -7,15 +7,23 @@ import emailjs from 'emailjs-com'
 
 const Contact = () => {
   const form = useRef();
+  const [resultado, setResultado] = useState(false);
+  const [mensaje, setMensaje] = useState();
 
   const sendEmail = (e) => {
+    setResultado(false);
+    setMensaje(null);
     e.preventDefault();
 
     emailjs.sendForm('service_60weg4e', 'template_atd5xzl', form.current, 'EzfzvwuRLjCefzBHp')
       .then((result) => {
           console.log(result.text);
+          setResultado(true);
+          setMensaje('Message sent successfully');
       }, (error) => {
           console.log(error.text);
+          setResultado(true);
+          setMensaje('An error has occurred, try with the other contact options');
       });
 
       e.target.reset()
@@ -54,6 +62,7 @@ const Contact = () => {
           <input type="text" name='name' placeholder='Your Full Name' required/>
           <input type="email" name='email' placeholder='Your Email' required/>
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
+          {resultado && (<h5 className='error__message'>{mensaje}</h5>)}
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
       </div>
