@@ -5,7 +5,6 @@ import {RiWhatsappFill} from 'react-icons/ri'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 
-
 const Contact = () => {
   const form = useRef();
   const [resultado, setResultado] = useState(false);
