@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/profile.jpg'
+import ME from '../../assets/coding.png'
 import {HiOutlineCode} from 'react-icons/hi'
 import {HiUsers} from 'react-icons/hi'
 import {BsFillFolderFill} from 'react-icons/bs'
