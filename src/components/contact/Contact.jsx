@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './contact.css'
 import {MdEmail} from 'react-icons/md'
 import {RiWhatsappFill} from 'react-icons/ri'
@@ -8,8 +8,17 @@ import emailjs from 'emailjs-com'
 const Contact = () => {
   const form = useRef();
   const [resultado, setResultado] = useState(false);
+  const [clase, setClase] = useState('');
   // const [mensaje, setMensaje] = useState();
 
+  useEffect(() => {
+    if (resultado === 'Message sent successfully'){
+      setClase('error__message');
+    } else {
+      setClase('error__message-true');
+    }
+  }, [resultado]);
+  
   const sendEmail = (e) => {
     setResultado(false);
     // setMensaje(null);
@@ -62,7 +71,7 @@ const Contact = () => {
           <input type="text" name='name' placeholder='Your Full Name' required/>
           <input type="email" name='email' placeholder='Your Email' required/>
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-          {resultado && (<h5 className='error__message'>{resultado}</h5>)}
+          {resultado && (<h5 className= {`${clase}`}>{resultado}</h5>)}
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
       </div>
