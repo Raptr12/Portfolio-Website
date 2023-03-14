@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/profile.jpg'
+import ME from '../../assets/profile.png'
 import HeaderSocial from './HeaderSocials'
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
         <HeaderSocial />
 
         <div className="me">
-            <img src={ME} alt="me" />
+          <img className='image-me'  src={ME} alt="Martin Mesa" />
         </div>
 
         <a href="#contact" className='scroll__down'>You Can Scroll Down</a>

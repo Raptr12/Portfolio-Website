@@ -51,6 +51,12 @@ header {
     padding: 5rem 1.5rem 1.5rem;
 }
 
+.image-me {
+    height: 400px;
+    width: auto; 
+    display: block; 
+    margin: 0 auto; 
+  }
 /*=====================SCROLL DOWN==================*/
 .scroll__down {
     position: absolute;
