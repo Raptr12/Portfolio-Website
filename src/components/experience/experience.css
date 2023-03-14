@@ -17,12 +17,13 @@
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    color: var(--color-primary);
 }
 
 .experience__container > div h3 {
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .experience__content {

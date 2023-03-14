@@ -13,7 +13,7 @@
 :root {
     --color-bg: #501900;
     --color-bg-variant: #982E00;
-    --color-primary: #ff3300;
+    --color-primary: #ff5e00;
     --color-primary-variant: rgba(252, 46, 32, 1);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
@@ -66,6 +66,7 @@ section > h2, section > h5 {
 
 section > h2 {
     color: var(--color-primary);
+    font-size: 2rem;
     margin-bottom: 3rem;
 }
 
